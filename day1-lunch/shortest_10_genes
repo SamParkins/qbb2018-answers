@@ -1,0 +1,10 @@
+dmel_mitochondrion_genome	9837	9902	"mt:tRNA:T";	65
+dmel_mitochondrion_genome	9903	9963	"mt:tRNA:P";	60
+dmel_mitochondrion_genome	9970	10494	"mt:ND6";	524
+dmel_mitochondrion_genome	10498	11634	"mt:Cyt-b";	1136
+dmel_mitochondrion_genome	11637	11702	"mt:tRNA:S:UCN";	65
+dmel_mitochondrion_genome	11720	12658	"mt:ND1";	938
+dmel_mitochondrion_genome	12669	12733	"mt:tRNA:L:CUN";	64
+dmel_mitochondrion_genome	12734	14058	"mt:lrRNA";	1324
+dmel_mitochondrion_genome	14058	14130	"mt:tRNA:V";	72
+dmel_mitochondrion_genome	14131	14916	"mt:srRNA";	785
