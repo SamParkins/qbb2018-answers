@@ -26,6 +26,6 @@ for line_1 in transdata:
                 count = count + 1
         else:
             if sys.argv[3] == 'print':
-                print('no match')
+                print('no match', "\t", line_1)
     
 
