@@ -1,0 +1,30 @@
+Index(['H3K27ac', 'H3K27me3', 'H3k4me1', 'H3K4me3', 'H3k9ac', 'fpkm_s'], dtype='object')
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 fpkm_s   R-squared:                       0.013
+Model:                            OLS   Adj. R-squared:                  0.012
+Method:                 Least Squares   F-statistic:                     88.83
+Date:                Fri, 31 Aug 2018   Prob (F-statistic):           3.62e-93
+Time:                        16:45:23   Log-Likelihood:            -2.0476e+05
+No. Observations:               34717   AIC:                         4.095e+05
+Df Residuals:                   34711   BIC:                         4.096e+05
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      7.3403      0.559     13.142      0.000       6.246       8.435
+H3K27ac       -0.4000      0.104     -3.838      0.000      -0.604      -0.196
+H3K27me3      -0.5453      0.066     -8.245      0.000      -0.675      -0.416
+H3k4me1       -0.0018      0.067     -0.027      0.978      -0.134       0.130
+H3K4me3        0.9263      0.066     14.141      0.000       0.798       1.055
+H3k9ac        -0.0151      0.037     -0.405      0.686      -0.088       0.058
+==============================================================================
+Omnibus:                    87068.801   Durbin-Watson:                   1.934
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):       2522085295.395
+Skew:                          27.373   Prob(JB):                         0.00
+Kurtosis:                    1322.292   Cond. No.                         15.0
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
