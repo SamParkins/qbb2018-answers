@@ -43,26 +43,12 @@ all_means = {histone_1 : mean_1, histone_2 : mean_2, histone_3 : mean_3, histone
 
 all_means_df = pd.DataFrame(all_means)
 
-
-
 all_means_df.columns = ["H3K27ac","H3K27me3","H3k4me1","H3K4me3","H3k9ac","fpkm_s"]
-#y = all_means_df.loc[:, fpkms_s]
-#x = all_means_df.loc[:, [histone_1,histone_2,histone_3,histone_4,histone_5]]
-#print(all_means_df.columns)
+
 model = smf.ols(formula='fpkm_s ~ H3K27ac + H3K27me3 + H3k4me1 + H3K4me3 + H3k9ac', data=all_means_df)
 
-#y = all_means_df.loc[:,fpkms_s]
-#x = all_means_df.loc[:, [histone_1, histone_2, histone_3, histone_4, histone_5]]
-#x= sm.add_constant(x)
-
-
-
 results = model.fit()
-#results_hist = results.resid
-#print(results.summary())
 
-#x_axis = results_hist
-#y_axis = y
 
 fig, ax = plt.subplots()
 ax.hist(results.resid, bins=5000)
